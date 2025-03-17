@@ -9,7 +9,7 @@ urlpatterns = [
     path('hello/', views.hello),
     path('lunch/', views.lunch),
     path('lotto/', views.lotto),
-    path('profile/<username>/', views.profile),
-    path('cube/<int:number>', views.cube),
+    path('profile/<username>/', views.profile), # username을 인자로 받음
+    path('cube/<int:number>', views.cube), # number를 int로 변환하여 인자로 받음
     path('articles/', views.articles),
 ]
